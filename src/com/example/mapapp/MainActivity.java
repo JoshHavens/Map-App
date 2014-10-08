@@ -1,11 +1,12 @@
 package com.example.mapapp;
-
+import com.google.android.maps.*;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends Activity {
+	String ApiKey = "AIzaSyDagRX70fPyES6A8IX7ZUVOOX8eRJ990GU";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
