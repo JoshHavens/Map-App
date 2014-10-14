@@ -21,6 +21,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/map"
         android:ems="10"
+        android:hint="Input Address"
         android:inputType="textPostalAddress" />
 
     <Button
@@ -40,5 +41,31 @@
         android:layout_above="@+id/button1"
         android:layout_centerHorizontal="true"
         android:text="Hybrid" />
+    
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="randLocation"
+        android:text="Random" />
+
+    <fragment
+        android:id="@+id/streetView"
+        android:name="com.google.android.gms.maps.StreetViewPanoramaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/switch1"
+        android:layout_alignRight="@+id/switch1"
+        android:text="Street View" />
 
 </RelativeLayout>
